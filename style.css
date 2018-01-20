@@ -140,7 +140,7 @@ aside {
 }
 
 article {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .❤️ {
@@ -149,11 +149,9 @@ article {
 }
 
 @media only screen and (min-width: 1024px) {
-
   .❤️ {
     text-align: left;
   }
-  
 }
 
 .button {
@@ -204,10 +202,16 @@ article {
 .tag {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
-  margin: 0 0 0 10px;
   font-size: 16px;
   color: #000;
+  margin: 0 10px 0 0;
   padding: 1px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .tag {
+    margin: 0 0 0 10px;
+  }
 }
 
 em {
@@ -215,6 +219,13 @@ em {
   font-size: 15px;
   font-style: normal;
   letter-spacing: 1px;
+  display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+  em {
+    display: inline-block;
+  }
 }
 
 .details .tag {
