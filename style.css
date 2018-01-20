@@ -118,11 +118,16 @@ main {
 aside {
   padding: 5vw;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2a8ff+0,eaa856+100 */
-background: rgb(210,168,255); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(210,168,255,1) 0%, rgba(234,168,86,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(210,168,255,1) 0%,rgba(234,168,86,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(210,168,255,1) 0%,rgba(234,168,86,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2a8ff', endColorstr='#eaa856',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: rgb(210, 168, 255);
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(210, 168, 255, 1) 0%, rgba(234, 168, 86, 1) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(210, 168, 255, 1) 0%, rgba(234, 168, 86, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(210, 168, 255, 1) 0%, rgba(234, 168, 86, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d2a8ff', endColorstr='#eaa856', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }
 
 @media only screen and (min-width: 1024px) {
@@ -134,8 +139,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2a8ff', end
   }
 }
 
+article {
+  margin-bottom: 15px;
+}
+
 .❤️ {
   margin-top: 15px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .❤️ {
+    text-align: left;
+  }
+  
 }
 
 .button {
@@ -239,7 +257,7 @@ label {
   margin: 5px 0 0 0;
   cursor: pointer;
   display: inline-block;
-  background: rgba(255,255,255,1);
+  background: rgba(255, 255, 255, 1);
   padding: 5px 12px 3px;
   border-radius: 15px;
 }
