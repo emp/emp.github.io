@@ -1,12 +1,9 @@
 ::selection {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2a8ff+0,5ef1ff+100 */
   background: rgb(210, 168, 255);
-  /* Old browsers */
 }
 
 * {
   box-sizing: border-box;
-  transition: all 0.5 ease;
 }
 
 body {
