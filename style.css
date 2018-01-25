@@ -26,17 +26,19 @@
 
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  color: #444;
+  color: #5b4c74;
   height: 100vh;
   padding: 0;
   margin: 0;
   line-height: 1.4;
+  overflow: auto;
 }
 
 a {
@@ -102,7 +104,7 @@ h3 {
   -webkit-border-radius: 0;
   border-radius: 0;
   font: normal 50px/normal "Fira Sans", Helvetica, sans-serif;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
   -o-text-overflow: clip;
   text-overflow: clip;
   background: none;
@@ -135,32 +137,30 @@ main {
 }
 
 aside {
-  padding: 5vw;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2a8ff+0,eaa856+100 */
+  color: rgba(0, 0, 0, .75);
+  position: relative;
   background: rgb(210, 168, 255);
-  /* Old browsers */
   background: -moz-linear-gradient(-45deg, rgba(210, 168, 255, 1) 0%, rgba(234, 168, 86, 1) 100%);
-  /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, rgba(210, 168, 255, 1) 0%, rgba(234, 168, 86, 1) 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, rgba(210, 168, 255, 1) 0%, rgba(234, 168, 86, 1) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d2a8ff', endColorstr='#eaa856', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
+  padding: 5vw;
 }
 
 @media only screen and (min-width: 1024px) {
   aside {
     grid-column: 6/13;
     grid-row: 1;
-    padding: 5vw;
-    overflow: auto;
+    overflow-y: auto;
   }
 }
 
 article {
   margin-bottom: 30px;
   animation: 1s ease-in-out 0s 1 slideUp;
+  background: white;
+  padding: 30px;
+  border-radius: 30px;
 }
 
 .❤️ {
@@ -312,4 +312,11 @@ input[name=details]:checked ~ div ~ p > .less {
 
 input[name=details]:checked ~ div ~ p > .more {
   display: none;
+}
+
+canvas {
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  pointer-events: none;
 }
