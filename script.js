@@ -13,7 +13,7 @@
   function initHeader() {
       width = window.innerWidth;
       height = window.innerHeight;
-      target = {x: 250, y: 250};
+      target = {x: width / 3, y: 100};
 
       canvas = document.getElementById('demo-canvas');
       canvas.width = width;
